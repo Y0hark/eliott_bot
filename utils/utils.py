@@ -1,7 +1,7 @@
 import json
 
 def get_token(token_service_name):
-    f = open('./token.json')
+    f = open('../data/token.json')
     data = json.load(f)
     
     if token_service_name == "telegram":

@@ -1,5 +1,5 @@
 import logging
-from utils import get_token
+from utils.utils import get_token
 from telegram.ext import CommandHandler, Updater, MessageHandler, Filters
 
 
@@ -17,7 +17,7 @@ def help(update, context):
     update.message.reply_text("Mais tu peux aussi m'envoyer des messages tout ce qu'il y a de plus classique! Attention en revanche, ajouter des lettres ou autres caractères à ceux mentionnés en dessous ne fonctionnera pas.")
     update.message.reply_text("Toutes mes commandes : \n "+
     "/help - pour connaître l'étendue de mes pouvoirs 👍")
-    update.message.reply_text("Les messages auquels je peux repondre :\n"+
+    update.message.reply_text("Les messages auxquels je peux repondre :\n"+
     "bonjour")
 
 commands_list.append(CommandHandler('help', help))
